@@ -8,6 +8,7 @@ You just need to change the API KEY in **`YoutubeApiService.kt`** file
 - **Search videos:** Allows user to see paginated result videos based on their search query.
 - **Favorite videos:**  User can save their favorite videos that will persist as long the application installed.
 - **Download videos:** Many choices for users to download videos in audio and video formats.
+- **Customized settings:** User can change the settings based on their preferences.
 
 # Tech-Stack
 - **`Retrofit`**
@@ -15,6 +16,16 @@ You just need to change the API KEY in **`YoutubeApiService.kt`** file
 - **`Coroutine`**
 - **`Kotlin Flows`** for reactive programming
 - **`Koin`** for dependency injection
+- **`Shared Preferences`** for preferences
+
+## Screenshots
+<p float="left">
+  <img src="/screenshot/home.png" width="100" />
+  <img src="/screenshot/download_config.png" width="100" />
+  <img src="/screenshot/downloading.png" width="100" />
+  <img src="/screenshot/finished.png" width="100" />
+  <img src="/screenshot/settings.png" width="100" />
+</p>
 
 
 ## Things to improve
