@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_favorite"
+    app:startDestination="@id/favoriteVideoFragment">
+
+    <fragment
+        android:id="@+id/favoriteVideoFragment"
+        android:name="com.example.youtubedownloader.favorite.FavoriteVideoFragment"
+        android:label="Favorite"
+        tools:layout="@layout/fragment_favorite_video" >
+        <action
+            android:id="@+id/action_favoriteVideoFragment_to_videoPlayerBottomFragment"
+            app:destination="@id/videoPlayerBottomFragment" />
+        <action
+            android:id="@+id/action_favoriteVideoFragment_to_nav_download_config"
+            app:destination="@id/nav_download_config" />
+    </fragment>
+    <dialog
+        android:id="@+id/videoPlayerBottomFragment"
+        android:name="com.example.youtubedownloader.player.VideoPlayerBottomFragment"
+        android:label="VideoPlayerBottomFragment" >
+        <argument
+            android:name="videoId"
+            app:argType="string"
+            app:nullable="true" />
+    </dialog>
+    <include app:graph="@navigation/nav_download_config" />
+</navigation>

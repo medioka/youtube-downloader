@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <PreferenceCategory app:title="General">
+        <Preference
+            android:title="Theme"
+            app:icon="@drawable/icon_brush"
+            app:key="@string/key_theme"
+            tools:summary="Night" />
+        <Preference
+            android:title="@string/key_language"
+            app:icon="@drawable/icon_language"
+            app:key="@string/key_language"
+            tools:summary="English" />
+    </PreferenceCategory>
+
+    <PreferenceCategory app:title="Updating">
+        <SwitchPreference
+            app:title="Auto update YtDL"
+            app:key="@string/key_autoupdate"/>
+        <Preference
+            android:title="YtDL-Current version"
+            app:key="@string/key_version"
+            app:icon="@drawable/icon_info"
+            tools:summary="2023.12.06" />
+        <Preference
+            app:icon="@drawable/icon_module"
+            app:key="@string/key_updatechannel"
+            app:title="YtDL-Update channel"
+            tools:summary="STABLE"/>
+        <Preference
+            android:title="Update module"
+            app:icon="@drawable/icon_update"
+            app:key="@string/update_module"
+            app:summary="Useful if there is a problem on download" />
+
+    </PreferenceCategory>
+
+
+</PreferenceScreen>

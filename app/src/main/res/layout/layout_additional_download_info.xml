@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:backgroundTint="?attr/colorSurfaceContainerHigh"
+    style="@style/Widget.Material3.CardView.Elevated"
+    android:clickable="true"
+    android:id="@+id/card_downloading_info"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="16dp">
+
+        <TextView
+            android:id="@+id/tv_downloadFormat_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/title_downloadFormat"
+            android:textAppearance="@style/TextAppearance.AppCompat.Title"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:viewBindingIgnore="true" />
+
+        <TextView
+            android:id="@+id/tv_filesize"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/textview_bg_rounded_medium"
+            app:layout_constraintStart_toStartOf="@+id/tv_downloadFormat_title"
+            app:layout_constraintTop_toBottomOf="@+id/tv_downloadFormat_title"
+            tools:text="File size" />
+
+        <TextView
+            android:id="@+id/tv_extensionType"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:background="@drawable/textview_bg_rounded_medium"
+            app:layout_constraintBottom_toBottomOf="@+id/tv_filesize"
+            app:layout_constraintStart_toEndOf="@+id/tv_filesize"
+            app:layout_constraintTop_toTopOf="@id/tv_filesize"
+            tools:text="Extension type" />
+
+        <TextView
+            android:id="@+id/tv_quality"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:background="@drawable/textview_bg_rounded_medium"
+            app:layout_constraintBottom_toBottomOf="@+id/tv_extensionType"
+            app:layout_constraintStart_toEndOf="@+id/tv_extensionType"
+            app:layout_constraintTop_toTopOf="@+id/tv_extensionType"
+            tools:text="Quality" />
+
+        <ImageView
+            android:id="@+id/btn_expand"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:contentDescription="@string/expand_card"
+            android:padding="4dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/icon_arrow_up"
+            app:layout_constraintBottom_toBottomOf="@+id/tv_quality"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/tv_quality"
+            app:layout_constraintVertical_bias="1"
+            tools:ignore="TouchTargetSizeCheck" />
+
+        <TextView
+            android:id="@+id/tv_downloadProgressInfo"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:textAppearance="@style/TextAppearance.Material3.BodySmall"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@id/tv_downloadFormat_title"
+            app:layout_constraintTop_toBottomOf="@id/tv_filesize"
+            app:layout_constraintVertical_bias="0"
+            tools:text="SOmethingSOmethingSOmethingSOmethingSOmething" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</com.google.android.material.card.MaterialCardView>

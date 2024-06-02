@@ -1,0 +1,44 @@
+<resources>
+    <string name="app_name">Youtube Downloader</string>
+    <string name="thumbnail">Thumbnail</string>
+    <string name="add_to_favorite">Add to favorite</string>
+    <string name="download_progress">Downloading… %.2f%%</string>
+    <string name="share_video">Share video</string>
+    <string name="download">Download</string>
+    <string name="settings">Settings</string>
+    <string name="downloaded">Downloaded</string>
+    <string name="downloading">Downloading</string>
+    <string name="hint_search">Search video</string>
+    <string name="retry">Retry</string>
+    <string name="description">%s • %s</string>
+    <string name="key_theme">themeKey</string>
+    <string name="key_language">Language</string>
+    <string name="update_module">update_module</string>
+    <string name="select_theme">Select theme</string>
+    <string name="ok">Ok</string>
+    <string name="cancel">Cancel</string>
+    <string name="favorite">Favorite</string>
+    <string name="configure_download_settings">Configure download settings</string>
+    <string name="tab_video">Video</string>
+    <string name="tab_audio">Audio</string>
+    <string name="hint_video_title">Video title</string>
+    <string name="hint_author">Author</string>
+    <string name="hint_container">Container</string>
+    <string name="update_video">Update</string>
+    <string name="downloading_tab">Downloading tab</string>
+    <string name="queueing">Queueing</string>
+    <string name="cancelled">Cancelled</string>
+    <string name="expand_card">Expand to see download info</string>
+    <string name="option_delete_video">Delete video</string>
+    <string name="option_copy_video_link">Copy video link</string>
+    <string name="option_play_video">Play video</string>
+    <string name="menu_bottom_home">Home</string>
+    <string name="title_downloadFormat">Download format</string>
+    <string name="icon_video">Video icon</string>
+    <string name="title_downloadPath">Download path</string>
+    <string name="description_download_format">%s/%s</string>
+    <string name="key_updatechannel">key_updateChannel</string>
+    <string name="key_version">key_version</string>
+    <string name="key_autoupdate">key_autoUpdate</string>
+
+</resources>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_home"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.example.youtubedownloader.home.HomeFragment"
+        android:label="Home"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_homeFragment_to_downloadingVideoFragment"
+            app:destination="@id/downloadingVideoFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_nav_favorite"
+            app:destination="@id/nav_favorite" />
+        <action
+            android:id="@+id/action_homeFragment_to_videoPlayerBottomFragment"
+            app:destination="@id/videoPlayerBottomFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_nav_download_config"
+            app:destination="@id/nav_download_config" />
+    </fragment>
+    <fragment
+        android:id="@+id/downloadingVideoFragment"
+        android:name="com.example.youtubedownloader.download.downloading.DownloadingVideoFragment"
+        android:label="Downloading"
+        tools:layout="@layout/fragment_downloading_video" >
+        <action
+            android:id="@+id/action_downloadingVideoFragment_to_moreOptionBottomSheet"
+            app:destination="@id/moreOptionBottomSheet" />
+    </fragment>
+    <dialog
+        android:id="@+id/moreOptionBottomSheet"
+        android:name="com.example.youtubedownloader.common.MoreOptionBottomSheet"
+        android:label="MoreOptionBottomSheet" />
+    <include app:graph="@navigation/nav_favorite" />
+    <dialog
+        android:id="@+id/videoPlayerBottomFragment"
+        android:name="com.example.youtubedownloader.player.VideoPlayerBottomFragment"
+        android:label="VideoPlayerBottomFragment" >
+        <argument
+            android:name="videoId"
+            app:argType="string"
+            app:nullable="true" />
+    </dialog>
+    <include app:graph="@navigation/nav_download_config" />
+</navigation>

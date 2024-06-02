@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Youtube Downloader</string>
+    <string name="thumbnail">Thumbnail</string>
+    <string name="add_to_favorite">Tambahkan favorite</string>
+    <string name="download_progress">Downloading… %.2f%%</string>
+    <string name="share_video">Bagikan video</string>
+    <string name="download">Unduh</string>
+    <string name="settings">Pengaturan</string>
+    <string name="downloaded">Telah di unduh</string>
+    <string name="downloading">Sedang di unduh</string>
+    <string name="hint_search">Cari video</string>
+    <string name="retry">Coba lagi</string>
+    <string name="description">%s • %s</string>
+    <string name="key_theme">themeKey</string>
+    <string name="key_language">Language</string>
+    <string name="update_module">update_module</string>
+    <string name="select_theme">Pilih tampilan</string>
+    <string name="ok">Ok</string>
+    <string name="cancel">Kembali</string>
+    <string name="favorite">Favorite</string>
+    <string name="configure_download_settings">Konfigurasi pengaturan unduhan</string>
+    <string name="tab_video">Video</string>
+    <string name="tab_audio">Audio</string>
+    <string name="hint_video_title">Judul video</string>
+    <string name="hint_author">Pengarang</string>
+    <string name="hint_container">Container</string>
+    <string name="update_video">Perbarui</string>
+    <string name="downloading_tab">Downloading tab</string>
+    <string name="queueing">Queueing</string>
+    <string name="cancelled">Cancelled</string>
+    <string name="expand_card">Tekan untuk melihat info unduhan</string>
+    <string name="option_delete_video">Hapus video</string>
+    <string name="option_copy_video_link">Salin tautan video</string>
+    <string name="option_play_video">Jalankan video</string>
+    <string name="menu_bottom_home">Awal</string>
+    <string name="title_downloadFormat">Download format</string>
+    <string name="icon_video">Video icon</string>
+    <string name="title_downloadPath">Download path</string>
+    <string name="description_download_format">%s/%s</string>
+    <string name="key_updatechannel">key_updateChannel</string>
+    <string name="key_version">key_version</string>
+    <string name="key_autoupdate">key_autoUpdate</string>
+
+</resources>

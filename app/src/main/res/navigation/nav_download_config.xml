@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_download_config"
+    app:startDestination="@id/downloadConfigurationBottomFragment">
+
+    <dialog
+        android:id="@+id/downloadConfigurationBottomFragment"
+        android:name="com.example.youtubedownloader.format_selector.DownloadConfigurationBottomFragment"
+        android:label="DownloadConfigurationBottomFragment" >
+        <action
+            android:id="@+id/action_downloadConfigurationBottomFragment_to_formatSelectorFragment"
+            app:destination="@id/formatSelectorFragment" />
+    </dialog>
+    <dialog
+        android:id="@+id/formatSelectorFragment"
+        android:name="com.example.youtubedownloader.format_selector.format.FormatSelectorFragment"
+        android:label="dialog_format_selector"
+        tools:layout="@layout/dialog_format_selector" >
+        <argument
+            android:name="id"
+            app:argType="string" />
+        <argument
+            android:name="type"
+            app:argType="com.example.youtubedownloader.core.domain.enums.VideoAudioType" />
+    </dialog>
+</navigation>
